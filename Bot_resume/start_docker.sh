@@ -1,3 +1,3 @@
 #!/bin/bash
-docker run -d --rm --name dbot bot
+docker run -d --rm --name phella/resume_bot resume_bot
 docker ps
