@@ -1,19 +1,23 @@
 apiVersion: v1
-kind: Pod
+kind: Deployment
 metadata:
-  name: bots_pod
-  labels:
-    env: prod
-    app: bots
-    tier: backend
-    owner: Ilshat
+  name: bots-deployment
 spec:
-  containers:
-    - name: resume_bot
-      image: phella/resume_bot
-      ports:
-        - containerPort: 80
-    - name: translate_bot
-      image: phella/translate_bot
-      ports:
-        - containerPort: 8080
+  selector:
+    matchLabels:
+      app: bots
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: bots
+    spec:
+      containers:
+        - name: resume-bot
+          image: phella/resume_bot
+          ports:
+            - containerPort: 80
+        - name: translate-bot
+          image: phella/translate_bot
+          ports:
+            - containerPort: 8080
