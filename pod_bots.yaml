@@ -16,8 +16,12 @@ spec:
         - name: resume-bot
           image: phella/resume_bot
           ports:
-            - containerPort: 80
+            - containerPort: 8080
         - name: translate-bot
           image: phella/translate_bot
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
+        - name: exxxcusebot
+          image: phella/exxxcusebot
+          ports:
+            - containerPort: 8082
