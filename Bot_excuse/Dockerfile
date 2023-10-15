@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 LABEL autor=Ilshat
-COPY ExxxcuseBot.py ./
+COPY ExxxuseBot.py ./
 COPY run_bot.sh ./
 RUN apt update
 RUN apt install python3 python3-pip -y
