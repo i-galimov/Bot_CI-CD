@@ -1,5 +1,5 @@
 #!/bin/bash
-python3 ExxxcuseBot.py &
+python3 ExxxuseBot.py &
 while true
 do
 echo "Bash Infinite Loop"
