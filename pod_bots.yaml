@@ -21,7 +21,7 @@ spec:
           image: phella/translate_bot
           ports:
             - containerPort: 8081
-        - name: exxxcusebot
+        - name: exxxusebot
           image: phella/exxxusebot
           ports:
             - containerPort: 8082
