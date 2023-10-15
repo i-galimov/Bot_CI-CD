@@ -22,6 +22,6 @@ spec:
           ports:
             - containerPort: 8081
         - name: exxxcusebot
-          image: phella/exxxcusebot
+          image: phella/exxxusebot
           ports:
             - containerPort: 8082
